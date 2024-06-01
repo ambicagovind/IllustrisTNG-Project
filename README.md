@@ -1,6 +1,6 @@
 # Extract Disks from IllustrisTNG
 
-This project aims to extract central disk galaxies from the IllustrisTNG (TNG50-1) Simulation by applying sigma-clipping procedures with reference to the Star Forming Main Sequence and the Mass-Size Relation. The catalogs span across 7 bins in the redshift range $0<z<3$ and carry the following galaxy properties:
+This project aims to extract central disk galaxies from the IllustrisTNG (TNG50-1) Simulation by applying sigma-clipping procedures with reference to the Star Forming Main Sequence and the Mass-Size Relation. The catalogs span across 7 bins in the redshift range $0 \lt z \lt 3$ and carry the following galaxy properties:<br>
 $z:$Redshift<br>
 $Snapshot:$ Snapshot Number<br>
 $SubhaloID:$<br> 
