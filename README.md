@@ -42,8 +42,34 @@ For example, `python3 get_disks.py --lower 0 --upper 0.05` will generate folders
 - `DISK_ID 0-0.05.csv`: List of SubhaloIDs
 - `<Snapshot Number>_compare`: A plot comparing the SFMS determined by different observational papers against TNG Data
 - `<Snapshot Number>_fit`: A plot comparing the fit to data after sigma-clipping against Speagle+14 Relation
-- `<lower>-<upper>MSR`: A plot comparing the data to mass size relation
-- `<lower>-<upper>MSRFit`: Fit to the data after sigma-clipping w.r.t. Mass Size Relation(not available in high redshift bins because observations disagree with simulations.
+- `0-0.05MSR`: A plot comparing the data to mass size relation
+- `0-0.05MSRFit`: Fit to the data after sigma-clipping w.r.t. Mass Size Relation(not available in high redshift bins because observations disagree with simulations.
 
-\end{itemize}
+## Generate Random Samples
 
+Generates ~100 random samples from the catalogs to run tests on.
+```
+python3 Random_Sample.py --lower <lower z limit> --upper <upper z>
+```
+gives the file `<lower>_sample` in the folder `Random Samples Speagle`. 
+
+## Testing with Baryonic Tully Fisher Relation
+Test the random samples with the BTFR.
+```
+python3 BTFR_Test.py --lower <lower z limit> --upper <upper z>
+```
+Run this to render files in the folder `BTFR_Test_Results/`:
+
+- `<lower>_btfr_data` : A plot of datapoints against the BTFR in McGaugh12
+- `<lower>_btfr_fit` : MCMC Fit to datapoints against BTFR in McGaugh12 and Avila-Reese+08
+- `<lower>_btfr_corner` : Posterior Distributions of sampled distribution in the above fit.
+
+## Generate Images
+
+Generate images of the samples to check that they are indeed disks. 
+```
+python3 Generate_Images.py --lower <lower z limit> --upper <upper z>
+```
+Running this stores PNG Images named `Snap<Snapshot Number>-ID<SubhaloID>` in the folder `Images/<lower>`
+
+In case of queries, contact: ep21btech11007@iith.ac.in
