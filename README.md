@@ -28,6 +28,9 @@ $R_{1/2M_*}(kpc)$: Stellar Half Mass Radius
 
 Note that this set of programs requires the `illustris_python` module and simulation data, hence can be used in its present form only within the IllustrisTNG JupyterLab Environment. 
 
+### Requirements
+numpy,pandas,matplotlib,astropy,argparse,pathlib,tqdm,emcee,corner
+
 ## 1. Extracting disks
 
 To extract based on Speagle+14, run `get_disks.py` from the command line like so:
@@ -72,4 +75,4 @@ python3 Generate_Images.py --lower <lower z limit> --upper <upper z>
 ```
 Running this stores PNG Images named `Snap<Snapshot Number>-ID<SubhaloID>` in the folder `Images/<lower>`
 
-In case of queries, contact: ep21btech11007@iith.ac.in
+The code has been written entirely by me, Ambica Govind, and is the result of a Bachelor's Thesis under Dr. Gauri Sharma and Prof. Shantanu Desai. In case of queries, contact: ep21btech11007@iith.ac.in
