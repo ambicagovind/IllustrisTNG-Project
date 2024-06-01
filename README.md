@@ -2,13 +2,13 @@
 
 This project aims to extract central disk galaxies from the IllustrisTNG (TNG50-1) Simulation by applying sigma-clipping procedures with reference to the Star Forming Main Sequence and the Mass-Size Relation. The catalogs span across 7 bins in the redshift range $0 \lt z \lt 3$:
 
-$0<z<0.05$<br>
-$0.05<z<0.45$<br>
-$0.45<z<1.05$<br>
-$1.05<z<1.45$<br>
-$1.45<z<2.05$<br>
-$2.05<z<2.45$<br>
-$2.45<z<3.05$<br>
+$0 \lt z \lt 0.05$<br>
+$0.05 \lt z \lt 0.45$<br>
+$0.45 \lt z \lt 1.05$<br>
+$1.05 \lt z \lt 1.45$<br>
+$1.45 \lt z \lt 2.05$<br>
+$2.05 \lt z \lt 2.45$<br>
+$2.45 \lt z \lt 3.05$<br>
 
 Catalogs carry the following galaxy properties:<br>
 <br>
@@ -36,14 +36,14 @@ To extract based on Speagle+14, run `get_disks.py` from the command line like so
 python3 get_disks.py --lower <lower z limit> --upper <upper z>
 ```
 For example, `python3 get_disks.py --lower 0 --upper 0.05` will generate folders named by `lower`, each one containing the following files:
-\begin{itemize}
 
-\item `0-0.05.csv`: Catalog
-\item `DISK_ID 0-0.05.csv`: List of SubhaloIDs
-\item `<Snapshot Number>_compare`: A plot comparing the SFMS determined by different observational papers against TNG Data
-\item `<Snapshot Number>_fit`: A plot comparing the fit to data after sigma-clipping against Speagle+14 Relation
-\item `<lower>-<upper>MSR`: A plot comparing the data to mass size relation
-\item `<lower>-<upper>MSRFit`: Fit to the data after sigma-clipping w.r.t. Mass Size Relation(not available in high redshift bins because observations disagree with simulations.
+
+- `0-0.05.csv`: Catalog
+- `DISK_ID 0-0.05.csv`: List of SubhaloIDs
+- `<Snapshot Number>_compare`: A plot comparing the SFMS determined by different observational papers against TNG Data
+- `<Snapshot Number>_fit`: A plot comparing the fit to data after sigma-clipping against Speagle+14 Relation
+- `<lower>-<upper>MSR`: A plot comparing the data to mass size relation
+- `<lower>-<upper>MSRFit`: Fit to the data after sigma-clipping w.r.t. Mass Size Relation(not available in high redshift bins because observations disagree with simulations.
 
 \end{itemize}
 
