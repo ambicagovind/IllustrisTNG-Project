@@ -16,17 +16,17 @@ Catalogs carry the following galaxy properties:<br>
 z:Redshift<br>
 Snapshot: Snapshot Number<br>
 SubhaloID:<br> 
-$M,M_{\odot}:$ Total Subhalo Mass in twice the effective radius(with a fiducial definition of stellar half mass radius),$2R_{eff}$<br> 
-$M_{gas},M_{\odot}$: Gas Mass in $2R_{eff}$<br>
-$M_{stellar},M_{\odot}$: Stellar Mass in $2R_{eff}$<br>
-$M_{DM},M_{\odot}$: Dark Matter Halo Mass in $2R_{eff}$<br>
-SFR($M_{\odot}/yr$): Star Formation Rate in $2R_{eff}$<br> 
-$V_{max}$(km/s): Asymptotic Rotation Curve Velocity<br>
-$R_{max}$(kpc): Distance from Galactic Centre upon achieving $V_{max}$<br>
-$\sigma_v$(km/s): Particle Velocity Dispersion<br>
-$R_{1/2M_*}(kpc)$: Stellar Half Mass Radius
+$M,M_{\odot}:$             Total Subhalo Mass in twice the effective radius(with a fiducial definition of stellar half mass radius),$2R_{eff}$<br> 
+$M_{gas},M_{\odot}$:       Gas Mass in $2R_{eff}$<br>
+$M_{stellar},M_{\odot}$:   Stellar Mass in $2R_{eff}$<br>
+$M_{DM},M_{\odot}$:        Dark Matter Halo Mass in $2R_{eff}$<br>
+SFR($M_{\odot}/yr$):       Star Formation Rate in $2R_{eff}$<br> 
+$V_{max}$(km/s):           Asymptotic Rotation Curve Velocity<br>
+$R_{max}$(kpc):            Distance from Galactic Centre upon achieving $V_{max}$<br>
+$\sigma_v$(km/s):          Particle Velocity Dispersion<br>
+$R_{1/2M_*}(kpc)$:         Stellar Half Mass Radius
 
-Note that this set of programs requires the `illustris_python` module and simulation data, hence can be used in its present form only within the IllustrisTNG JupyterLab Environment. 
+Note that this set of programs requires the `illustris_python` module and simulation data, hence can be used in its present form only within the IllustrisTNG JupyterLab Environment. These files are too large to download thus these scripts most certainly can't be run locally.
 
 ### Requirements
 numpy,pandas,matplotlib,astropy,argparse,pathlib,tqdm,emcee,corner
@@ -75,4 +75,4 @@ python3 Generate_Images.py --lower <lower z limit> --upper <upper z>
 ```
 Running this stores PNG Images named `Snap<Snapshot Number>-ID<SubhaloID>` in the folder `Images/<lower>`
 
-The code has been written entirely by me, Ambica Govind, and is the result of a Bachelor's Thesis under Dr. Gauri Sharma and Prof. Shantanu Desai. In case of queries, contact: ep21btech11007@iith.ac.in
+The project is a result of a Bachelor's Thesis under Dr. Gauri Sharma and Prof. Shantanu Desai. In case of queries, contact: ep21btech11007@iith.ac.in
