@@ -227,7 +227,7 @@ def get_func_deets(rs):
       2.5: (kurczynski, 0.399, "Kucrzynski+16")
   }
     
-    default_func = "kurczynski"
+    default_func = kurczynski
     default_scat = 0.369
     default_label = "Kucrzynski+16"
 
