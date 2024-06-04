@@ -48,6 +48,8 @@ For example, `python3 get_disks.py --lower 0 --upper 0.05` will generate folders
 - `0-0.05MSR`: A plot comparing the data to mass size relation
 - `0-0.05MSRFit`: Fit to the data after sigma-clipping w.r.t. Mass Size Relation(not available in high redshift bins because observations disagree with simulations.
 
+Alternatively, to extract based on the best-fitting observational relation in each bin, run `get_other_disks.py`. Appropriate changes need to be made in line 27 of `RandomSample.py`, line 31 of `BTFR_Test.py` and line 31 of `Generate_Images.py` where the output folder names needs to be changed.
+
 ## Generate Random Samples
 
 Generates ~100 random samples from the catalogs to run tests on.
