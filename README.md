@@ -50,6 +50,8 @@ For example, `python3 get_disks.py --lower 0 --upper 0.05` will generate folders
 
 Alternatively, to extract based on the best-fitting observational relation in each bin, run `get_other_disks.py`. Appropriate changes need to be made in line 27 of `RandomSample.py`, line 31 of `BTFR_Test.py` and line 31 of `Generate_Images.py` where the output folder names needs to be changed.
 
+Also replace [ 29fdb501f084ab3bde756d4827030bcb ] with your own JupyterLab API Key in `get_other_disks.py`,`Generate_Images.py` and `get_disks.py`.
+
 ## Generate Random Samples
 
 Generates ~100 random samples from the catalogs to run tests on.
