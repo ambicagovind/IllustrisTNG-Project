@@ -29,7 +29,7 @@ $R_{1/2M_*}(kpc)$:         Stellar Half Mass Radius
 Note that this set of programs requires the `illustris_python` module and simulation data, hence can be used in its present form only within the IllustrisTNG JupyterLab Environment. These files are too large to download thus these scripts most certainly can't be run locally.
 
 ### Requirements
-`numpy,pandas,matplotlib,astropy,argparse,pathlib,tqdm,emcee,corner` <br>
+`numpy`,`pandas`,`matplotlib`,`astropy`,`argparse`,`pathlib`,`tqdm`,`emcee`,`corner` <br>
 Replace [ 29fdb501f084ab3bde756d4827030bcb ] with your own JupyterLab API Key in `get_other_disks.py`,`Generate_Images.py` and `get_disks.py`.
 
 
