@@ -30,6 +30,8 @@ Note that this set of programs requires the `illustris_python` module and simula
 
 ### Requirements
 numpy,pandas,matplotlib,astropy,argparse,pathlib,tqdm,emcee,corner
+Replace [ 29fdb501f084ab3bde756d4827030bcb ] with your own JupyterLab API Key in `get_other_disks.py`,`Generate_Images.py` and `get_disks.py`.
+
 
 ## 1. Extracting disks
 
@@ -49,8 +51,6 @@ For example, `python3 get_disks.py --lower 0 --upper 0.05` will generate folders
 - `0-0.05MSRFit`: Fit to the data after sigma-clipping w.r.t. Mass Size Relation(not available in high redshift bins because observations disagree with simulations.
 
 Alternatively, to extract based on the best-fitting observational relation in each bin, run `get_other_disks.py`. Appropriate changes need to be made in line 27 of `RandomSample.py`, line 31 of `BTFR_Test.py` and line 31 of `Generate_Images.py` where the output folder names needs to be changed.
-
-Also replace [ 29fdb501f084ab3bde756d4827030bcb ] with your own JupyterLab API Key in `get_other_disks.py`,`Generate_Images.py` and `get_disks.py`.
 
 ## Generate Random Samples
 
