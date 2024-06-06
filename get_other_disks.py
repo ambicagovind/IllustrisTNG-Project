@@ -222,9 +222,9 @@ def get_func_deets(rs):
       0.05: (renzini, 0.3, "Renzini&Peng15"),
       0.45: (speagle, 0.3, "Speagle+14"),
       1.05: (pearson, 0.3, "Pearson+18"),
-      1.5: (kurczynski, 0.383, "Kucrzynski+16"),
-      2: (kurczynski, 0.354, "Kucrzynski+16"),
-      2.5: (kurczynski, 0.399, "Kucrzynski+16")
+      1.45: (kurczynski, 0.383, "Kucrzynski+16"),
+      2.05: (kurczynski, 0.354, "Kucrzynski+16"),
+      2.45: (kurczynski, 0.399, "Kucrzynski+16")
   }
     
     default_func = kurczynski
